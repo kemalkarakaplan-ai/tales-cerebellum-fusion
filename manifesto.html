@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales Cerebellum Stack - Interactive Manifesto</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #0a0f1d;
+            --card-bg: #111827;
+            --accent-blue: #3b82f6;
+            --accent-glow: #60a5fa;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .logo-space {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .tagline {
+            color: var(--accent-blue);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.1);
+        }
+
+        .card h3 {
+            color: var(--text-main);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.25rem;
+        }
+
+        .card h3 i {
+            color: var(--accent-blue);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .formula-box {
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 4px solid var(--accent-blue);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: var(--accent-glow);
+        }
+
+        .interactive-panel {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .panel-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .interactive-btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto 0;
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-align: center;
+        }
+
+        .interactive-btn:hover {
+            background: #2563eb;
+        }
+
+        .status-display {
+            background: #070a13;
+            border: 1px dashed var(--accent-blue);
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 20px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #34d399;
+            min-height: 80px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-space">TALES TECHNOLOGY</div>
+            <div class="tagline">Cerebellum Stack & Collective Vision Ecosystem</div>
+        </header>
+
+        <div class="grid-layout">
+            <div class="card">
+                <h3><i class="fas fa-layer-group"></i> Layer 21-22: Concentric Injection</h3>
+                <p>Hardware-locked co-location aligning optical and 3D ultrasonic sensor vectors to single spatial Target Origin (T_0). Direct pixel reinforcement converting baseline stream to structured cellular configurations.</p>
+                <div class="formula-box">Pixel_Core = [R, G, B, Z, Density]</div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-shield-halved"></i> Layer 23-24: Reflex Intervention</h3>
+                <p>An isolated software-to-hardware bypass running outside primary autonomous inference kernels. Direct threat prioritization triggering immediate mitigation paths before high-level classification latency steps in.</p>
+                <div class="formula-box">if (ΔZ / Δt) > Threshold -> TRIGGER_REFLEX</div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-network-wired"></i> Layer 25-26: P2P Doppler Alliance</h3>
+                <p>Ad-hoc inter-vehicle communication eliminating wave degradation and frequency distortion over cross-directional high-velocity trajectories without cloud intervention.</p>
+                <div class="formula-box">f_alliance = f_0 * (1 ± v_relative / c_sound)</div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-cloud-sun"></i> Layer 27: Mesh Grid Attenuation</h3>
+                <p>Collective edge-node coordination enabling unified line-of-sight propagation across multiple platform arrays. Bypasses environmental limits and traditional telemetry occlusion overheads.</p>
+                <div class="formula-box">Overhead_Reduction = ~85% Local Compute</div>
+            </div>
+        </div>
+
+        <div class="interactive-panel">
+            <div class="panel-title"><i class="fas fa-terminal"></i> Live Telemetry Handshake Simulator</div>
+            <p style="text-align: center; color: var(--text-muted);">Simulate an independent node-to-node network handshake across severe atmospheric interference barriers.</p>
+            <button class="interactive-btn" onclick="runSimulation()">Initiate P2P Handshake</button>
+            <div class="status-display" id="sim-log">> System idle. Awaiting instruction...</div>
+        </div>
+
+        <footer>
+            &copy; 2026 Tales Technology. Proprietary Architectural Schema. All logic architectures verified under open decentralization structures.
+        </footer>
+    </div>
+
+    <script>
+        function runSimulation() {
+            const log = document.getElementById('sim-log');
+            log.innerHTML = "> Initiating active "I See You" (ISU) protocol over local cluster...<br>";
+            
+            setTimeout(() => {
+                log.innerHTML += "> Target node detected. Calculating real-time Doppler shift deviation...<br>";
+            }, 800);
+
+            setTimeout(() => {
+                log.innerHTML += "> Asynchronous Frequency Alliance established. Applying modulation corrections...<br>";
+            }, 1800);
+
+            setTimeout(() => {
+                log.innerHTML += "<span style='color: #60a5fa;'>> [SUCCESS] Collective spatial vision grid locked. Local stack compute load dropped by 85%.</span>";
+            }, 2800);
+        }
+    </script>
+</body>
+</html>
